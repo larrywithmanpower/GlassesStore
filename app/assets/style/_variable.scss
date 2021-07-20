@@ -1,0 +1,131 @@
+// ! color
+$primary: #650300;
+$secondary: #AA0601;
+$success: #AA06010D;
+$info: #DEE2E6;
+$muted: #707070;
+$light: #00000029;
+$dark: #212529;
+$black: #000;
+$white: #fff;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  // "warning":    $warning,
+  // "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "muted":       $muted,
+  "black":       $black,
+  "white":       $white,
+);
+
+// bg color
+@each $name, $color in $theme-colors {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}
+// text color
+@each $name, $color in $theme-colors {
+  .text-#{$name} {
+    color: $color;
+  }
+}
+
+//!  fint-size
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+
+$h1-font-size:                $font-size-base * 4;
+$h2-font-size:                $font-size-base * 3;
+$h3-font-size:                $font-size-base * 2.25;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size
+);
+
+@each $num, $fontSize in $font-sizes {
+  .h#{$num} {
+    font-size: $fontSize;
+  }
+}
+
+// !spacing
+$spacer: 1rem;
+$spacers: (
+  0: 0, // 0
+  1: $spacer * 0.5, //8px
+  2: $spacer,  // 16px
+  3: $spacer * 1.25,  // 20px
+  4: $spacer * 1.5, // 24px
+  5: $spacer * 1.85, // 30px
+  6: $spacer * 2,  //  32px
+  7: $spacer * 2.5,  // 40px
+  8: $spacer * 3,  //  48px
+  9: $spacer * 3.15,  //  50px
+  10: $spacer * 3.75,  // 60px
+  11: $spacer * 3.74,  // 64px
+  12: $spacer * 5,  //80px
+);
+
+@each $num, $spacer in $spacers {
+  .p-#{$num} {
+    padding: $spacer;
+  }
+  .pt-#{$num} {
+    padding-top: $spacer;
+  }
+  .pb-#{$num} {
+    padding-bottom: $spacer;
+  }
+  .ps-#{$num} {
+    padding-left: $spacer;
+  }
+  .pe-#{$num} {
+    padding-right: $spacer;
+  }
+  .px-#{$num} {
+    padding-left: $spacer;
+    padding-right: $spacer;
+  }
+  .py-#{$num} {
+    padding-top: $spacer;
+    padding-bottom: $spacer;
+  }
+  .m-#{$num} {
+    margin: $spacer;
+  }
+  .mt-#{$num} {
+    margin-top: $spacer;
+  }
+  .mb-#{$num} {
+    margin-bottom: $spacer;
+  }
+  .ms-#{$num} {
+    margin-left: $spacer;
+  }
+  .me-#{$num} {
+    margin-right: $spacer;
+  }
+  .mx-#{$num} {
+    margin-right: $spacer;
+    margin-left: $spacer;
+  }
+  .my-#{$num} {
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+  }
+}
+
+
