@@ -1,7 +1,8 @@
-@import './variable';
+@import './helpers/variable';
 @import './reset';
 @import './mixin';
-@import './helpers';
+@import './helpers/utils';
 
 // page
 @import './layout';
+@import './page/index';

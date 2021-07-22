@@ -1,0 +1,32 @@
+// banner
+.banner {
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
+  background-position: center center;
+  background-size: cover;
+  height: 840px;
+
+  h2 {
+    font-size: 64px;
+    line-height: 96px;
+    font-weight: bold;
+    @include pad {
+      font-size: 48px;
+      line-height: 72px;
+    }
+    @include mobile {
+      font-size: 32px;
+    }
+  }
+  span {
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: normal;
+    @include pad {
+      font-size: 20px;
+    line-height: 30px;
+    }
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+}

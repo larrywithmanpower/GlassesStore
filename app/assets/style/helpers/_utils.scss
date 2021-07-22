@@ -1,6 +1,8 @@
 
 .container {
   max-width: 1110px;
+  // 要加上height 100% 否則flex .align-items-center無作用
+  height: 100%;
   padding: 0 15px;
   margin: 0 auto;
   @include pad {
@@ -9,6 +11,10 @@
   @include mobile {
     max-width: 345px;
   }
+}
+
+.text-end {
+  text-align: right;
 }
 
 
@@ -24,7 +30,13 @@
 .justify-content-around {
   justify-content: space-around;
 }
-
+.justify-content-end {
+  justify-content: end;
+}
+.justify-content-end {
+  // 是flex-end不是end
+  justify-content: flex-end;
+}
 .align-items-center {
   align-items: center;
 }
@@ -34,4 +46,16 @@
   @include mobile {
     flex-wrap: wrap;
   };
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+
+
+
+// position
+.position-relative {
+  position: relative;
 }
