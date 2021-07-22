@@ -1,7 +1,14 @@
 
 .container {
-  max-width: 960px;
+  max-width: 1110px;
+  padding: 0 15px;
   margin: 0 auto;
+  @include pad {
+    max-width: 690px;
+  }
+  @include mobile {
+    max-width: 345px;
+  }
 }
 
 
@@ -20,4 +27,11 @@
 
 .align-items-center {
   align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+  @include mobile {
+    flex-wrap: wrap;
+  };
 }
