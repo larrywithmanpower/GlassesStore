@@ -2,6 +2,7 @@
 $primary: #650300;
 $secondary: #AA0601;
 $success: #AA06010D;
+$warning: #ffc107;
 $info: #DEE2E6;
 $muted: #707070;
 $light: #00000029;
@@ -125,6 +126,23 @@ $spacers: (
   .my-#{$num} {
     margin-top: $spacer;
     margin-bottom: $spacer;
+  }
+}
+
+// ! line-height
+$line-height-base:            1.5;
+$line-height-sm:              1.25;
+$line-height-lg:              2.25;
+
+$line-heighs: (
+  1: $line-height-base,
+  2: $line-height-sm,
+  3: $line-height-lg,
+);
+
+@each $num, $line-height in $line-heighs {
+  .lh-#{$num} {
+    line-height: $line-height;
   }
 }
 

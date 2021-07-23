@@ -16,6 +16,12 @@
 .text-end {
   text-align: right;
 }
+.text-center {
+  text-align: center;
+}
+.fw-bold{
+  font-weight: bold;
+}
 
 
 // ! flex
@@ -43,13 +49,11 @@
 
 .flex-wrap {
   flex-wrap: wrap;
-  @include mobile {
-    flex-wrap: wrap;
-  };
 }
 
 .flex-row-reverse {
   flex-direction: row-reverse;
+  
 }
 
 

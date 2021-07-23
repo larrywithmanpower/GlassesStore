@@ -1,9 +1,43 @@
+// utilities
+.title {
+  font-size: 48px;
+  line-height: 72px;
+  margin-bottom: 40px;
+  @include pad {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  @include mobile {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+}
+
+.section-spacing {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  @include pad {
+    padding-top: 40px;
+    padding-bottom: 16px;
+  }
+  @include mobile {
+    padding-top: 32px;
+    padding-bottom: 8px;
+  }
+}
+
 // banner
 .banner {
   background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
   background-position: center center;
   background-size: cover;
   height: 840px;
+  @include pad {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true);
+  }
+  @include mobile {
+    height: 394px;
+  }
 
   h2 {
     font-size: 64px;
@@ -23,10 +57,147 @@
     font-weight: normal;
     @include pad {
       font-size: 20px;
-    line-height: 30px;
+      line-height: 30px;
     }
     @include mobile {
       font-size: 16px;
+    }
+  }
+}
+
+// service
+
+.list {
+  &__item {
+    width: 25%;
+    @include pad {
+      width: 50%;
+      margin-bottom: 40px;
+    }
+    @include mobile {
+      width: 100%;
+      margin-bottom: 32px;
+    }
+  }
+  img {
+    width: 83px;
+    height: 83px;
+    margin: 0 auto;
+  }
+}
+
+// classic
+.classic {
+  position: relative;
+  margin-bottom: 32px;
+  @include pad {
+    margin-bottom: 8px;
+    flex-direction: row;
+  }
+  .ms-6 {
+    @include pad {
+      margin-left: 0;
+      margin-right: 32px;
+    }
+    @include mobile {
+      margin-right: 0;
+    }
+  }
+  .me-6 {
+    @include pad {
+      margin-left: 0;
+      margin-right: 32px;
+    }
+    @include mobile {
+      margin-right: 0;
+    }
+  }
+  &__img {
+    width: 60%;
+    @include mobile {
+      width: 100%;
+    }
+  }
+  &__title {
+    width: 33%;
+    i {
+      margin-right: 8px;
+    }
+    font-size: 48px;
+    line-height: 72px;
+    font-style: italic;
+    @include pad {
+      font-size: 28px;
+    }
+    @include mobile {
+      position: absolute;
+      left: 50%;
+      margin-left: -90px;
+    }
+  }
+}
+
+// design
+.bg-design {
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true);
+  background-size: cover;
+  background-position: center center;
+}
+
+.designArea {
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 50%;
+  @include mobile {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  img {
+    @include size(540px, 455px);
+    @include pad {
+      @include size(330px, 278px);
+    }
+    @include mobile {
+      @include size(345px, 291px);
+    }
+  }
+  &::before {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-right: 15px;
+    margin-left: 15px;
+    content: "";
+    background-color: #fff;
+    opacity: 0.5;
+  }
+  &__text {
+    position: absolute;
+    font-size: 72px;
+    line-height: 108px;
+    @include pad {
+      font-size: 32px;
+      line-height: 25px;
+    }
+    &--left {
+      top: 181px;
+      left: 104px;
+      @include pad {
+        top: 118px;
+        left: 91px;
+      }
+    }
+    &--right {
+      top: 181px;
+      left: 152px;
+      @include pad {
+        top: 118px;
+        left: 112px;
+      }
     }
   }
 }
