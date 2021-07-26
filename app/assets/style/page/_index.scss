@@ -18,7 +18,7 @@
   padding-bottom: 80px;
   @include pad {
     padding-top: 40px;
-    padding-bottom: 34px;
+    padding-bottom: 56px;
   }
   @include mobile {
     padding-top: 32px;
@@ -71,11 +71,9 @@
     width: 23%;
     @include pad {
       width: 40%;
-      margin-bottom: 40px;
     }
     @include mobile {
       width: 100%;
-      margin-bottom: 32px;
     }
   }
   img {
@@ -88,28 +86,8 @@
 // classic
 .classic {
   position: relative;
-  margin-bottom: 32px;
   @include pad {
-    margin-bottom: 8px;
     flex-direction: row;
-  }
-  .ms-6 {
-    @include pad {
-      margin-left: 0;
-      margin-right: 32px;
-    }
-    @include mobile {
-      margin-right: 0;
-    }
-  }
-  .me-6 {
-    @include pad {
-      margin-left: 0;
-      margin-right: 32px;
-    }
-    @include mobile {
-      margin-right: 0;
-    }
   }
   &__img {
     width: 60%;
@@ -155,7 +133,6 @@
   }
   @include mobile {
     width: 100%;
-    margin-bottom: 16px;
   }
   img {
     @include size(540px, 455px);
@@ -232,11 +209,9 @@
   }
   @include pad {
     width: 330px;
-    margin-bottom: 32px;
   }
   @include mobile {
     width: 100%;
-    margin-bottom: 16px;
     margin-right: 0;
     margin-left: 0;
   }
@@ -312,15 +287,17 @@
   textarea {
     height: 136px;
   };
+
   .form-control {
     background-color: $success;
     padding: 10px 16px;
     line-height: 24px;
+    border: 1px solid $black;
     @include pad {
       font-size: 14px;
     }
     &:focus-visible {
-      outline: 3px groove $secondary;
+      outline: 3px solid rgba(170, 6, 1, .7);
     }
   }
 }

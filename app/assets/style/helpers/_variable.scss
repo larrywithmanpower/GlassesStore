@@ -80,54 +80,8 @@ $spacers: (
   12: $spacer * 5,  //80px
 );
 
-@each $num, $spacer in $spacers {
-  .p-#{$num} {
-    padding: $spacer;
-  }
-  .pt-#{$num} {
-    padding-top: $spacer;
-  }
-  .pb-#{$num} {
-    padding-bottom: $spacer;
-  }
-  .ps-#{$num} {
-    padding-left: $spacer;
-  }
-  .pe-#{$num} {
-    padding-right: $spacer;
-  }
-  .px-#{$num} {
-    padding-left: $spacer;
-    padding-right: $spacer;
-  }
-  .py-#{$num} {
-    padding-top: $spacer;
-    padding-bottom: $spacer;
-  }
-  .m-#{$num} {
-    margin: $spacer;
-  }
-  .mt-#{$num} {
-    margin-top: $spacer;
-  }
-  .mb-#{$num} {
-    margin-bottom: $spacer;
-  }
-  .ms-#{$num} {
-    margin-left: $spacer;
-  }
-  .me-#{$num} {
-    margin-right: $spacer;
-  }
-  .mx-#{$num} {
-    margin-right: $spacer;
-    margin-left: $spacer;
-  }
-  .my-#{$num} {
-    margin-top: $spacer;
-    margin-bottom: $spacer;
-  }
-}
+
+
 
 // ! line-height
 $line-height-base:            1.5;

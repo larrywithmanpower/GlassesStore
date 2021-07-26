@@ -11,7 +11,7 @@
     max-width: 345px;
   }
 }
-
+// ! text
 .text-end {
   text-align: right;
 }
@@ -34,16 +34,20 @@
 .justify-content-around {
   justify-content: space-around;
 }
+
 .justify-content-end {
   justify-content: flex-end;
 }
+
 .justify-content-start {
   justify-content: flex-start;
 }
+
 .justify-content-center {
   // 是flex-end不是end
   justify-content: center;
 }
+
 .align-items-center {
   align-items: center;
 }
@@ -59,28 +63,185 @@
 .flex-column {
   flex-direction: column;
 }
-
+// ! spacing
 .mb-auto {
   margin-bottom: auto;
 }
 
+@each $num, $spacer in $spacers {
+  .p-#{$num} {
+    padding: $spacer;
+  }
+  .pt-#{$num} {
+    padding-top: $spacer;
+  }
+  .pb-#{$num} {
+    padding-bottom: $spacer;
+  }
+  .ps-#{$num} {
+    padding-left: $spacer;
+  }
+  .pe-#{$num} {
+    padding-right: $spacer;
+  }
+  .px-#{$num} {
+    padding-left: $spacer;
+    padding-right: $spacer;
+  }
+  .py-#{$num} {
+    padding-top: $spacer;
+    padding-bottom: $spacer;
+  }
+  .m-#{$num} {
+    margin: $spacer;
+  }
+  .mt-#{$num} {
+    margin-top: $spacer;
+  }
+  .mb-#{$num} {
+    margin-bottom: $spacer;
+  }
+  .ms-#{$num} {
+    margin-left: $spacer;
+  }
+  .me-#{$num} {
+    margin-right: $spacer;
+  }
+  .mx-#{$num} {
+    margin-right: $spacer;
+    margin-left: $spacer;
+  }
+  .my-#{$num} {
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+  }
+}
+
+// ! width
 .w-100 {
   width: 100%;
 }
 
-// position
+//! position
 .position-relative {
   position: relative;
 }
-
+// ! unvisible
 .overflow-hidden {
   overflow: hidden;
 }
 
+//! pad
+@include pad {
+  .mb-md-0 {
+    margin-bottom: 0;
+  }
+  @each $num, $spacer in $spacers {
+    .p-md-#{$num} {
+      padding: $spacer;
+    }
+    .pt-md-#{$num} {
+      padding-top: $spacer;
+    }
+    .pb-md-#{$num} {
+      padding-bottom: $spacer;
+    }
+    .ps-md-#{$num} {
+      padding-left: $spacer;
+    }
+    .pe-md-#{$num} {
+      padding-right: $spacer;
+    }
+    .px-md-#{$num} {
+      padding-left: $spacer;
+      padding-right: $spacer;
+    }
+    .py-md-#{$num} {
+      padding-top: $spacer;
+      padding-bottom: $spacer;
+    }
+    .m-md-#{$num} {
+      margin: $spacer;
+    }
+    .mt-md-#{$num} {
+      margin-top: $spacer;
+    }
+    .mb-md-#{$num} {
+      margin-bottom: $spacer;
+    }
+    .ms-md-#{$num} {
+      margin-left: $spacer;
+    }
+    .me-md-#{$num} {
+      margin-right: $spacer;
+    }
+    .mx-md-#{$num} {
+      margin-right: $spacer;
+      margin-left: $spacer;
+    }
+    .my-md-#{$num} {
+      margin-top: $spacer;
+      margin-bottom: $spacer;
+    }
+  }
+}
 
-// mobile
+//! mobile
 @include mobile {
+  //! flex
   .align-items-sm-start {
     align-items: flex-start;
+  }
+  //! spacing
+  .mb-sm-2 {
+    margin-bottom: $spacer;
+  }
+  @each $num, $spacer in $spacers {
+    .p-sm-#{$num} {
+      padding: $spacer;
+    }
+    .pt-sm-#{$num} {
+      padding-top: $spacer;
+    }
+    .pb-sm-#{$num} {
+      padding-bottom: $spacer;
+    }
+    .ps-sm-#{$num} {
+      padding-left: $spacer;
+    }
+    .pe-sm-#{$num} {
+      padding-right: $spacer;
+    }
+    .px-sm-#{$num} {
+      padding-left: $spacer;
+      padding-right: $spacer;
+    }
+    .py-sm-#{$num} {
+      padding-top: $spacer;
+      padding-bottom: $spacer;
+    }
+    .m-sm-#{$num} {
+      margin: $spacer;
+    }
+    .mt-sm-#{$num} {
+      margin-top: $spacer;
+    }
+    .mb-sm-#{$num} {
+      margin-bottom: $spacer;
+    }
+    .ms-sm-#{$num} {
+      margin-left: $spacer;
+    }
+    .me-sm-#{$num} {
+      margin-right: $spacer;
+    }
+    .mx-sm-#{$num} {
+      margin-right: $spacer;
+      margin-left: $spacer;
+    }
+    .my-sm-#{$num} {
+      margin-top: $spacer;
+      margin-bottom: $spacer;
+    }
   }
 }
