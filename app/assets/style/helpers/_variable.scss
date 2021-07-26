@@ -9,19 +9,27 @@ $light: #00000029;
 $dark: #212529;
 $black: #000;
 $white: #fff;
+$borderColor : #dcdc;
+$paginationColor : #555555;
+$productColor1: #5F3E2D;
+$productColor2: #B75929;
 
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
   "success":    $success,
   "info":       $info,
-  // "warning":    $warning,
+  "warning":    $warning,
   // "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
   "muted":       $muted,
   "black":       $black,
   "white":       $white,
+  "borderColor": $borderColor,
+  "paginationColor": $paginationColor,
+  "productColor1": $productColor1,
+  "productColor2": $productColor2,
 );
 
 // bg color
@@ -78,6 +86,7 @@ $spacers: (
   10: $spacer * 3.75,  // 60px
   11: $spacer * 3.74,  // 64px
   12: $spacer * 5,  //80px
+  13: $spacer *6, // 96px
 );
 
 

@@ -1,0 +1,152 @@
+.navPorduct {
+  @include mobile {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  li {
+    width: 370px;
+    border: 1px solid $borderColor;
+    border-bottom: 8px solid transparent;
+    transition: all .3s ease;
+    @include pad {
+      width: 230px;
+      height: 60px;
+    }
+    @include mobile { 
+      width: 115px;
+      height: 30px;
+      border-bottom: 4px solid transparent;
+    }
+    a {
+      display: block;
+      padding: 27px 0;
+      font-size: 32px;
+      line-height: 50px;
+      @include pad {
+        padding: 12px 0;
+        font-size: 24px;
+      }
+      @include mobile {
+        padding: 6px 0;
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+    &:hover {
+      border-bottom-color: $secondary;
+    }
+  }
+  .active {
+    border-bottom-color: $secondary;
+  }
+}
+
+.bannerOptical {
+  max-width: 50%;
+  @include size(960px,304px);
+  object-fit: cover;
+  &--left {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week4/banner-1.png?raw=true);
+  }
+  &--right {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week4/banner-2.png?raw=true);
+  }
+  @include pad {
+    @include size(384px, 304px);
+  }
+}
+
+.title {
+  font-size: 42px;
+  line-height: 63px;
+  span {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+.productList {
+  
+  &__item {
+    margin-bottom: 104px;
+    @include pad {
+      width: 50%;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    @include mobile {
+      width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    img {
+      width: 255px;
+      height: 164px;
+      transition: transform .3s ease;
+      @include pad {
+        @include size(330px, 164px);
+        
+      }
+    }
+    .productList__item__text {
+      font-size: 24px;
+      line-height: 36px;
+      transition: color .3s ease;
+    }
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+      .productList__item__text {
+        color: $warning;
+      }
+    }
+  }
+}
+
+.box {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.pagination {
+  margin-bottom: 160px;
+  text-align-last: left;
+  &__list {
+    border: 1px solid $paginationColor;
+    &:hover a,
+    &.active a{
+      color: $white;
+      background-color: $black;
+    }
+  }
+  &__list--text {
+    font-size: 19px;
+    line-height: 29px;
+    transition: all .3s ease;
+    color: $paginationColor;
+    display: block;
+    padding: 13px 12px;
+    @include mobile {
+      font-size: 17px;
+      line-height: 26px;
+      padding: 10px 10px;
+      letter-spacing: 0px;
+    }
+  }
+  &__list--num {
+    font-size: 19px;
+    line-height: 29px;
+    transition: all .3s ease;
+    color: $paginationColor;
+    padding: 13px 16.5px;
+    display: block;
+    @include mobile {
+      font-size: 16px;
+      line-height: 24px;
+      padding: 15px 12px;
+      letter-spacing: 0px;
+    }
+  }
+}

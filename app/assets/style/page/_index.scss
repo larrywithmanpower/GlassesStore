@@ -27,10 +27,8 @@
 }
 
 // banner
-.banner {
+.bannerHome {
   background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
-  background-position: center center;
-  background-size: cover;
   height: 840px;
   @include pad {
     background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true);

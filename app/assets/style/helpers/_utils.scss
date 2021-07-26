@@ -21,10 +21,21 @@
 .fw-bold {
   font-weight: bold;
 }
+// ! display
+.d-block {
+  display: block;
+}
 
 // ! flex
 .d-flex {
   display: flex;
+}
+
+// ! background
+.bg-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .justify-content-between {
@@ -66,6 +77,9 @@
 // ! spacing
 .mb-auto {
   margin-bottom: auto;
+}
+.ms-auto {
+  margin-left: auto;
 }
 
 @each $num, $spacer in $spacers {
@@ -243,5 +257,9 @@
       margin-top: $spacer;
       margin-bottom: $spacer;
     }
+  }
+  // ! display
+  .d-none {
+    display: none;
   }
 }
