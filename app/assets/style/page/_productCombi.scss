@@ -43,7 +43,6 @@
 
 .bannerOptical {
   max-width: 50%;
-  @include size(960px,304px);
   object-fit: cover;
   &--left {
     background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week4/banner-1.png?raw=true);
@@ -52,7 +51,10 @@
     background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week4/banner-2.png?raw=true);
   }
   @include pad {
-    @include size(384px, 304px);
+    height: 304px;
+  }
+  @include mobile {
+    height: 148px;
   }
 }
 
@@ -113,6 +115,10 @@
 .pagination {
   margin-bottom: 160px;
   text-align-last: left;
+  @include mobile {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
   &__list {
     border: 1px solid $paginationColor;
     &:hover a,
@@ -140,7 +146,7 @@
     line-height: 29px;
     transition: all .3s ease;
     color: $paginationColor;
-    padding: 13px 16.5px;
+    padding: 13px 17px;
     display: block;
     @include mobile {
       font-size: 16px;
