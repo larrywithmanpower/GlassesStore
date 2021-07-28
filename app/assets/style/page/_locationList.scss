@@ -1,0 +1,67 @@
+// ! card area
+.locationList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__item {
+    width: 31.5%;
+    border: 1px solid $borderLocationColor;
+    @include pad {
+      width: 48%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    width: 350px;
+    height: 224px;
+    transition: all .3s ease;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__title {
+    padding: 12px 24px;
+    border-bottom: 1px solid $borderLocationColor;
+    font-size: 24px;
+    line-height: 36px;
+    @include pad {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__body {
+    padding: 12px 24px;
+    font-size: 20px;
+    line-height: 30px;
+    @include pad {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+
+  &__btn {
+    border-radius: 0;
+    border: 1px solid $borderLocationColor;
+    font-size: 19px;
+    line-height: 27px;
+    background-color: $black;
+    color: $white;
+    padding: 20px 0;
+    transition: all .3s ease;
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
+    @include pad {
+      font-size: 14px;
+      line-height: 21px;
+      padding: 16px 0;
+    }
+  }
+}

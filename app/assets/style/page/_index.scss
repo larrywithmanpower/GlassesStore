@@ -195,8 +195,6 @@
 
 .card {
   box-shadow: 0 2px 6px $light;
-  margin-right: -15px;
-  margin-left: -15px;
   width: 255px;
   transition: all .3s ease;
   &:hover {
@@ -249,13 +247,7 @@
 
 .form-container {
   max-width: 730px;
-  padding-right: 15px;
-  padding-left: 15px;
   margin: 0 auto;
-  @include mobile {
-    margin-right: -15px;
-    margin-left: -15px;
-  }
 }
 
 .form__text {

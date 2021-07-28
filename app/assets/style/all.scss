@@ -6,8 +6,11 @@
 @import './reset';
 @import './mixin';
 @import './helpers/utils';
+@import './helpers/pageTools';
 
 // page
 @import './layout';
 @import './page/index';
-@import './page/productCombi';
+@import './page/productPages';
+@import './page/faq';
+@import './page/locationList';

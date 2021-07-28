@@ -74,13 +74,22 @@
 .flex-column {
   flex-direction: column;
 }
+
 // ! spacing
 .mb-auto {
   margin-bottom: auto;
 }
+
 .ms-auto {
   margin-left: auto;
 }
+
+.mx--15{
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+
 
 @each $num, $spacer in $spacers {
   .p-#{$num} {
