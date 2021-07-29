@@ -21,9 +21,14 @@
 .fw-bold {
   font-weight: bold;
 }
+
 // ! display
 .d-block {
   display: block;
+}
+
+.d-none {
+  display: none;
 }
 
 // ! flex
@@ -87,6 +92,14 @@
 .mx--15{
   margin-right: -15px;
   margin-left: -15px;
+}
+
+.mb-104 {
+  margin-bottom: 104px;
+}
+
+.mb-160 {
+  margin-bottom: 160px;
 }
 
 
@@ -207,6 +220,17 @@
       margin-bottom: $spacer;
     }
   }
+  // ! flex
+  .flex-md-column {
+    flex-direction: column;
+  }
+  // ! display
+  .d-md-none {
+    display: none;
+  }
+  .d-inline-md-block {
+    display: inline-block;
+  }
 }
 
 //! mobile
@@ -215,10 +239,19 @@
   .align-items-sm-start {
     align-items: flex-start;
   }
+
+  .flex-sm-column {
+    flex-direction: column;
+  }
   //! spacing
+  .mb-sm-56 {
+    margin-bottom: 56px;
+  }
+  
   .mb-sm-2 {
     margin-bottom: $spacer;
   }
+
   @each $num, $spacer in $spacers {
     .p-sm-#{$num} {
       padding: $spacer;
@@ -268,7 +301,7 @@
     }
   }
   // ! display
-  .d-none {
+  .d-sm-none {
     display: none;
   }
 }

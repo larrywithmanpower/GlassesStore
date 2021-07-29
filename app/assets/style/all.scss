@@ -6,6 +6,7 @@
 @import './reset';
 @import './mixin';
 @import './helpers/utils';
+@import './helpers/components';
 @import './helpers/pageTools';
 
 // page
@@ -14,3 +15,4 @@
 @import './page/productPages';
 @import './page/faq';
 @import './page/locationList';
+@import './page/blog';

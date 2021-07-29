@@ -13,6 +13,7 @@ $borderColor : #dcdc;
 $borderLeftColor : #9F1213;
 $borderLocationColor : #00000020;
 $paginationColor : #555555;
+$paginationDisableColor : #F2F2F2;
 $productColor1: #5F3E2D;
 $productColor2: #B75929;
 
@@ -32,6 +33,7 @@ $theme-colors: (
   "borderLeftColor": $borderLeftColor,
   "borderLocationColor": $borderLocationColor,
   "paginationColor": $paginationColor,
+  "paginationDisableColor": $paginationDisableColor,
   "productColor1": $productColor1,
   "productColor2": $productColor2,
 );

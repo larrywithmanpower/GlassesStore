@@ -1,0 +1,91 @@
+// blog link
+.blogLink {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  &__list {
+    a {
+      display: block;
+      transition: all .3s ease;
+      font-size: 20px;
+      line-height: 24px;
+      @include pad {
+        font-size: 16px;
+      }
+    }
+    &:hover a {
+      color: $warning;
+    }
+  }
+}
+
+.blogList {
+
+  &__img {
+    @include size(635px, 400px);
+    @include pad {
+      @include size(330px, 208px);
+    }
+    @include mobile {
+      @include size(345px, 217px);
+    }
+  }
+
+
+  &__textArea {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    @include pad {
+      width: 47%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 46px;
+    @include pad {
+      font-size: 20px;
+      line-height: 29px;
+    }
+  }
+
+  span {
+    strong {
+      font-size: 20px;
+      line-height: 30px;
+      @include pad {
+        font-size: 16px;
+        line-height: 21px;
+      }
+    }
+    small {
+      font-size: 16px;
+      line-height: 24px;
+      @include pad {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 30px;
+    @include pad {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+
+  &__link {
+    margin-top: auto;
+    font-size: 36px;
+    line-height: 54px;
+    transition: color .3s ease;
+    &:hover {
+      color: $warning;
+    }
+  }
+}

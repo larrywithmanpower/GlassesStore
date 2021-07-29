@@ -73,7 +73,6 @@
 .productList {
   
   &__item {
-    margin-bottom: 104px;
     @include pad {
       width: 50%;
       padding-right: 15px;
@@ -93,6 +92,9 @@
         @include size(330px, 164px);
         
       }
+      @include mobile {
+        @include size(345px, 166px);
+      }
     }
     .sunglasses--img {
       width: 350px;
@@ -100,6 +102,9 @@
       transition: transform .3s ease;
       @include pad {
         @include size(330px, 164px);
+      }
+      @include mobile {
+        @include size(345px, 166px);
       }
     }
     .productList__item__text {
@@ -124,47 +129,3 @@
   border-radius: 4px;
 }
 
-.pagination {
-  margin-bottom: 160px;
-  text-align-last: left;
-  @include mobile {
-    margin-right: -15px;
-    margin-left: -15px;
-  }
-  &__list {
-    border: 1px solid $paginationColor;
-    &:hover a,
-    &.active a{
-      color: $white;
-      background-color: $black;
-    }
-  }
-  &__list--text {
-    font-size: 19px;
-    line-height: 29px;
-    transition: all .3s ease;
-    color: $paginationColor;
-    display: block;
-    padding: 13px 12px;
-    @include mobile {
-      font-size: 17px;
-      line-height: 26px;
-      padding: 10px 10px;
-      letter-spacing: 0px;
-    }
-  }
-  &__list--num {
-    font-size: 19px;
-    line-height: 29px;
-    transition: all .3s ease;
-    color: $paginationColor;
-    padding: 13px 17px;
-    display: block;
-    @include mobile {
-      font-size: 16px;
-      line-height: 24px;
-      padding: 15px 12px;
-      letter-spacing: 0px;
-    }
-  }
-}
