@@ -1,14 +1,14 @@
 .container {
-  max-width: 1110px;
+  max-width: 1140px;
   // 要加上height 100% 否則flex .align-items-center無作用
   height: 100%;
   padding: 0 15px;
   margin: 0 auto;
   @include pad {
-    max-width: 690px;
+    max-width: 720px;
   }
   @include mobile {
-    max-width: 345px;
+    max-width: 375px;
   }
 }
 // ! text

@@ -1,5 +1,5 @@
 // utilities
-.title {
+.index-title {
   font-size: 48px;
   line-height: 72px;
   margin-bottom: 40px;
@@ -122,17 +122,15 @@
 .designArea {
   cursor: grabbing;
   position: relative;
-  padding-right: 15px;
-  padding-left: 15px;
-  width: 50%;
+  width: 48%;
   &:hover::before {
     opacity: 0;
-
   }
   @include mobile {
     width: 100%;
   }
   img {
+    object-fit: cover;
     @include size(540px, 455px);
     @include pad {
       @include size(330px, 278px);
@@ -149,8 +147,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    margin-right: 15px;
-    margin-left: 15px;
     content: "";
     background-color: #fff;
     opacity: 0.5;
@@ -160,32 +156,19 @@
     position: absolute;
     font-size: 72px;
     line-height: 108px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     @include pad {
       font-size: 32px;
       line-height: 25px;
     }
     &--left {
-      top: 181px;
-      left: 104px;
+      left: 34%;
+      transform: translate(-34%, -50%);
       @include pad {
-        top: 118px;
-        left: 91px;
-      }
-      @include mobile {
-        top: 125px;
-        left: 75px;
-      }
-    }
-    &--right {
-      top: 181px;
-      left: 152px;
-      @include pad {
-        top: 118px;
-        left: 112px;
-      }
-      @include mobile {
-        top: 130px;
-        left: 90px;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
     }
   }
@@ -195,7 +178,8 @@
 
 .card {
   box-shadow: 0 2px 6px $light;
-  width: 255px;
+  border: 2px solid $info;
+  width: 23%;
   transition: all .3s ease;
   &:hover {
     box-shadow: 8px 8px 6px $light;
@@ -204,31 +188,21 @@
     }
   }
   @include pad {
-    width: 330px;
+    width: 47%;
   }
   @include mobile {
     width: 100%;
-    margin-right: 0;
-    margin-left: 0;
   }
 }
 
 .card__img {
   transition: all .3s ease;
-  width: 255px;
-  height: 256px;
-  @include pad {
-    width: 330px;
-  }
-  @include mobile {
-    width: 345px;
-  }
+  width: 100%;
 }
 
 
 .card__body {
   padding: 16px;
-  border: 2px solid $info;
   display: flex;
   flex-direction: column;
   height: 204px;
@@ -246,8 +220,11 @@
 }
 
 .form-container {
-  max-width: 730px;
+  width: 66%;
   margin: 0 auto;
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .form__text {
@@ -302,8 +279,10 @@ label {
 }
 
 .btn {
+  width: 50%;
   transition: background .5s ease-in-out;
   background-color: $secondary;
+  cursor: pointer;
   border: none;
   line-height: 24px;
   padding: 16px 143px;
@@ -315,6 +294,7 @@ label {
     padding: 10px 77px;
   }
   @include mobile {
+    width: 100%;
     padding: 8px 54px;
   }
   &:hover {

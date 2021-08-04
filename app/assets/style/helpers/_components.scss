@@ -8,11 +8,16 @@
     margin-top: 40px;
   }
   &__list {
+    transition: all .3s ease;
     border: 1px solid $paginationColor;
-    &:hover a,
-    &.active a{
-      color: $white;
+    // background-color: $white;
+    &:hover,
+    &.active {
       background-color: $black;
+    }
+    &:hover a,
+    &.active a {
+      color: $white;
     }
     &.bg-paginationDisableColor:hover a,
     &.bg-paginationDisableColor.active a{
@@ -24,7 +29,6 @@
   &__list--text {
     font-size: 19px;
     line-height: 29px;
-    transition: all .3s ease;
     color: $paginationColor;
     display: block;
     padding: 13px 12px;

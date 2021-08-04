@@ -2,7 +2,7 @@
 .navPorduct {
   
   li {
-    width: 370px;
+    width: 25%;
     border: 1px solid $borderColor;
     border-bottom: 8px solid transparent;
     transition: all .3s ease;
@@ -81,8 +81,6 @@
     @include mobile {
       width: 100%;
       margin-bottom: 32px;
-      padding-right: 0;
-      padding-left: 0;
     }
     .combi--img {
       width: 255px;
