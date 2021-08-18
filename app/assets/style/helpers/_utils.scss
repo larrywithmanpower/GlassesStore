@@ -169,6 +169,9 @@
 
 //! pad
 @include pad {
+  .lh-30 {
+    line-height: 30px;
+  }
   .mb-md-0 {
     margin-bottom: 0;
   }
@@ -250,6 +253,14 @@
   
   .mb-sm-2 {
     margin-bottom: $spacer;
+  }
+
+  .pt-28 {
+    padding-bottom: 28px;
+  }
+
+  .pb-56 {
+    padding-bottom: 56px;
   }
 
   @each $num, $spacer in $spacers {

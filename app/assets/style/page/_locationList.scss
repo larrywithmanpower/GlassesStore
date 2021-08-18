@@ -41,6 +41,13 @@
     padding: 12px 24px;
     font-size: 20px;
     line-height: 30px;
+    
+    li {
+      display: flex;
+      i {
+        margin-right: 10.5px;
+      }
+    }
     @include pad {
       font-size: 14px;
       line-height: 21px;
@@ -106,7 +113,7 @@
     @include pad {
       width: 48%;
     }
-    @include pad {
+    @include mobile {
       width: 100%;
     }
   }

@@ -21,6 +21,7 @@
 .blogList {
 
   &__img {
+    display: block;
     @include size(635px, 400px);
     @include pad {
       @include size(330px, 208px);
